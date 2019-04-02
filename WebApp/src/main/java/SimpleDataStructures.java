@@ -1,16 +1,17 @@
 /*
  * Interface for stacks and queues for array implementations
  * 
+ * All fields are inheritily static and final in an interface
  */
 public interface SimpleDataStructures {
 	
 	static final int MAX = 50;
-	int beginningNode = 0;
-	int arr[] = new int[MAX];
+	//int beginningNode = -1;			//where the top or bottom is not
+	//int arr[] = new int[MAX];		// .. in 0 -> 50 
 	
 	boolean isEmpty();
 	
-	boolean push(int x);
+	void push(int x);
 	
 	int pop();
 }
