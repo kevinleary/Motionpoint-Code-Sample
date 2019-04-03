@@ -27,7 +27,7 @@ public class SimpleStack implements SimpleDataStructures{
 
 	public int pop() {
 		
-		if (top < 0) {
+		if (isEmpty()) {
 			System.out.println("Stack Underflow");
 			return 0;
 		}
